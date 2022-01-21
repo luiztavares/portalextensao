@@ -85,8 +85,4 @@ export default {
   color: white;
 }
 
-.container {
-  padding: 0 !important;
-  margin: 0 !important;
-}
 </style>
