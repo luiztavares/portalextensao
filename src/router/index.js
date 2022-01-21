@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import Page from '../components/Page.vue'
 
 Vue.use(VueRouter)
 
@@ -14,7 +15,11 @@ const routes = [
     name: 'Atividades',
     component: () => import(/* webpackChunkName: "about" */ '../views/Atividades.vue')
   },
-
+  {
+    path: '/page/:name',
+    name: 'page',
+    component: Page,
+  },
 ]
 
 const router = new VueRouter({

@@ -1,5 +1,6 @@
 <template>
   <v-container>
+
     <!-- <v-carousel v-model="model">
     <v-carousel-item
       v-for="(color, i) in colors"
@@ -262,6 +263,7 @@
 
 <script>
 import json from "../../public/dados.json";
+
 
 export default {
   name: "Home",

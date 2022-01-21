@@ -43,14 +43,14 @@
               <p class="subheader pt-5">Navegue nos cursos abaixo:</p>
 
               <v-slide-group v-model="slideModel" show-arrows>
-                <v-slide-item
+                <v-slide-item 
                   v-for="(curso, index) in limit(
                     filter(cursos, 'área temática primária', area),
                     4
                   )"
                   :key="'curso' + index"
                 >
-                  <v-card class="ma-2" width="300" height="450">
+                  <v-card :to="{ name: 'page', params: { name: curso.nome, obj:curso } }" class="ma-2" width="300" height="450">
                     <v-img :src="nextImage()" height="200px"></v-img>
                     <v-card-title class="pb-0"> {{ curso.nome }} </v-card-title>
 

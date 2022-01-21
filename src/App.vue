@@ -12,14 +12,14 @@
         <v-img v-bind="props" min-height="88"></v-img>
       </template>
       <div class="d-flex align-center">
-        <v-img
+        <a href="/"><v-img
           alt="Vuetify Logo"
           class=" mr-2"
           contain
           src="../public/portal extensão - tipografia.png"
           transition="scale-transition"
           height="88"
-        />
+        /></a>
       </div>
 
       <v-spacer></v-spacer>
@@ -33,6 +33,16 @@
       >
         <span class="mr-2 appbar-text">Consulta de ações</span>
       </v-btn>
+
+      <v-btn
+        text
+        color="#ffdc00"
+        :to="{ name: 'page', params: { obj: curso } }"
+      >
+        <span class="mr-2 appbar-text">Page</span>
+      </v-btn>
+
+
 
       <v-btn
         href="https://xn--extenso-2wa.ufrj.br/index.php/2-sem-categoria/487-extensao-na-midia"
