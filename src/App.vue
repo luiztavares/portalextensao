@@ -34,15 +34,6 @@
         <span class="mr-2 appbar-text">Consulta de ações</span>
       </v-btn>
 
-      <v-btn
-        text
-        color="#ffdc00"
-        :to="{ name: 'page', params: { obj: curso } }"
-      >
-        <span class="mr-2 appbar-text">Page</span>
-      </v-btn>
-
-
 
       <v-btn
         href="https://xn--extenso-2wa.ufrj.br/index.php/2-sem-categoria/487-extensao-na-midia"
